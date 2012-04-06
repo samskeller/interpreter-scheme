@@ -1,0 +1,13 @@
+The code in this repo was designed by myself and my two groupmembers: Simon Montague and Will Herold. We worked on this
+for a computer science class called Programming Languages at Carleton College. The code was finished in November of 2011.
+
+Basically what we built was an interpreter, written in C, to interpret code written in Scheme. Our tokenizer is written
+in our splitter.c file and the parser is in the parser.c file. The interpreter itself, which is the majority of the
+code, is contained in the interpreter.c file. There are a number of test files created in this repo as well-- they can
+be run with our program, assuming a gcc compiler is used, using the following unix format:
+
+gcc -o interpreter interpreter.c interpTest.c linkedList.c parser.c splitter.c
+
+Then, running the command "./interpreter interpreter-test-#.rkt" will make the interpreter run the commands listed
+inside the test file and then bring up an interactive window so that the user can try some Scheme code for the 
+interpreter to use. 
