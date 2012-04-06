@@ -1,0 +1,5 @@
+(letrec ((x 3) (y x)) (+ y x))
+(let* ((x 5) (y x)) (+ y x))
+(let* ((x 7) (x 5)) x)
+(define doit (lambda (y) (define x 3) (+ x y)))
+(doit 20)
